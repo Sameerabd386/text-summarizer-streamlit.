@@ -6,7 +6,7 @@ from transformers import pipeline
 
 @st.cache_resource
 def load_summarizer():
-    summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+    summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
     return summarizer
 
 summarizer = load_summarizer()
